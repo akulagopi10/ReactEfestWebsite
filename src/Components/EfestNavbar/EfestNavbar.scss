@@ -1,0 +1,69 @@
+@import '../efstyles.scss';
+
+.efest-hdr {
+   @include ms-postion;
+    background-color: #000;
+    padding: 2rem 3%;
+    @include ms-flex;
+    .efest-logo {
+        font-size: 3.2rem;
+        color: #c71585;
+        font-weight: 750;
+        span {
+            color: #00a9e0;
+        }
+    }
+    .ef-nav a {
+        display: inline-block;
+        color: #fff;
+        margin-left: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 550;
+        &:hover {
+            border-radius: 1rem;
+            background-color: #c71585;
+            padding: 1rem 1rem;
+            color: #fff;
+            transition: 0.5s ease-out;
+        }
+    }
+    input{
+        display: none;
+    }
+
+    label{
+        font-size: 2rem;
+        color: #fff;
+        display: none;
+    }
+
+}
+
+@media(max-width:$screen-lg) {
+    .efest-hdr{
+        padding:1rem 3%;
+        label{
+            display: initial;
+        }
+        .ef-nav {
+            position: absolute;
+            top:100%;
+            left:0;
+            right:0;
+            background-color:#000;
+            transform-origin: right top;
+            transform: scale(0);
+            transition: 0.6s ease-in;
+        }
+        .ef-nav a{
+            display: block;
+            margin: 1rem;
+            padding: 1rem;
+            font-size: 1.8rem;
+        }
+
+         input:checked ~ .ef-nav{
+            transform: scale(1);
+        }
+    }
+}

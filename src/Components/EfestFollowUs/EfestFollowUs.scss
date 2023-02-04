@@ -1,0 +1,47 @@
+@import "../efstyles.scss";
+
+.follow-us{
+    padding: 4rem 0%;
+    .sec-title{
+       @include sec-sbhdng;
+    }
+}
+.flw-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    gap:2rem;
+    padding: 2rem 3%;
+    
+}
+
+.flw-buttons .fl-btn{
+    background-color: #fff;
+    box-shadow: 0 0.9rem 1rem solid rgba(0,0,0,0.2);
+    padding: 1rem 1.5rem;
+    border-radius: 5rem;
+     min-width: 26%;
+    font-size: 1.7rem;
+    color: orangered;
+    margin: 1rem 0;
+    border: 1px solid #00a9e0;
+}
+
+.fl-btn label{
+    display: inline-block;
+     padding:0.2rem 0.5rem;
+     color:#00a9e0;
+     font-size: 2rem;
+}
+
+
+@media(max-width:$screen-mbile){
+  .flw-buttons{
+    flex-direction: column;
+    .flw-buttons .fl-btn{
+        min-width: 100%;
+    }
+    
+}
+}

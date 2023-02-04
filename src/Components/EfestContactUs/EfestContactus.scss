@@ -1,0 +1,67 @@
+@import "../efstyles.scss";
+
+
+.contact-us{
+    padding: 3rem 7%;
+    background-color: #fff0f5;
+    .sec-title{
+       @include sec-sbhdng;
+       padding: 3rem 0;
+    }
+}
+
+.cnt-us-form{
+    padding:2rem;
+    box-shadow: 0 0.9rem 1rem rgba(0,0,0,0.5);
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    background-color: #ddfff7;
+    border-radius: 0.5rem;
+}
+
+
+.cnt-us-form .cnt-img{
+  flex: 1 1 30rem;
+}
+
+.cnt-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.cnt-form{
+    flex: 1 1 50rem;
+    padding: 1rem;
+}
+
+.cnt-form .form-box{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.cnt-form .form-box input, textarea{
+    padding: 1.5rem 1rem;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    color: #333;
+    border-radius: 0.7rem;
+    width: 49%;
+}
+
+
+.cnt-form textarea{
+    width: 100%;
+    resize: none;
+    height: 25rem;
+}
+.cnt-form .cnt-btn{
+    background-color: #c71585;
+    color: #fff;
+    padding: 1rem 0.9rem;
+    border-radius: 2rem;
+    min-width: 30%;
+}
